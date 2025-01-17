@@ -1,16 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
-  --gray-44: #444444;
-  --gray-55: #555555;
-  --gray-c0: #c0c0c0;
-  --gray-d9: #d9d9d9;
-  --gray-ea: #eaeaea;
-  --white-f5: #f5f5f5;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   font-size: 16px;
 }
+
 @media (max-width: 1280px) {
   :root {
     font-size: 13px;
@@ -33,6 +29,7 @@ body * {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
 body {
   background-color: white;
   overflow: visible !important;
@@ -42,14 +39,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box !important;
 }
+
 dialog {
   display: none;
 }
+
 dialog[open] {
   display: block;
 }
@@ -58,24 +58,28 @@ dialog[open] {
   padding-inline: 10%;
   margin: auto;
   position: relative;
+
   @media screen and (max-width: 1200px) {
     padding-inline: 5%;
   }
 }
+
 .cover-image {
   @apply w-full h-full object-cover object-center;
 }
 
 .btn-primary {
-  @apply text-white text-center rounded-lg bg-primary hover:bg-primary-light transition-all duration-300 ease-in-out disabled:bg-primary-light disabled:cursor-not-allowed;
+  @apply text-white text-center rounded-lg bg-slate-800 hover:bg-slate-500 transition-all duration-300 ease-in-out disabled:bg-slate-500 disabled:cursor-not-allowed;
 }
 
 .circle {
   @apply aspect-square rounded-[50%] overflow-hidden;
 }
+
 .absolute-center {
   @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
 }
+
 .layout-card {
   @apply rounded-lg shadow-md bg-white px-[1.5rem] py-[1.5rem];
 }
@@ -84,6 +88,7 @@ input,
 textarea {
   border: none;
   background-color: transparent;
+
   &:focus {
     outline: none;
   }
